@@ -19,7 +19,7 @@ namespace CapaLogica
             Conexion oConexion = new Conexion();
             try
             {
-                comando = new SqlCommand("select idRol from Usuario where nickname = '" + Usuario + "' and clave = '" + Clave + "'", oConexion.conecte());
+                comando = new SqlCommand("select idRol from Usuario where nickname = '" + Usuario + "' and clave = '" + Clave + "'",     oConexion.conecte());
                 lector = comando.ExecuteReader();
                 if (lector.Read())
                 {
